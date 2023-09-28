@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
+  
+<default sync-j="2"/>
+  
   <remote name="yocto"       fetch="https://git.yoctoproject.org"/>
   <remote name="oe"          fetch="https://github.com/openembedded"/>
   <remote name="kraj"        fetch="https://github.com/kraj"/>
 
   <remote name="community"   fetch="https://github.com/Freescale"/>
   <remote name="ossystems"   fetch="https://github.com/OSSystems"/>
-  <remote fetch="https://github.com/meta-qt5"      name="QT5"/>
+  <remote name="QT5"         fetch="https://github.com/meta-qt5"/>
   <remote name="timesys"     fetch="https://github.com/TimesysGit"/>
 
   <remote name="nxp-imx"     fetch="https://github.com/nxp-imx"/>
@@ -36,7 +38,6 @@
   </project>
   
   <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="54b177f4acb3048d21a68f180fc183d0fdf47a94" upstream="mickledore"/>
-  <project remote="QT5"  revision="44d44933200287f7d17cf6981af4b4a0961c308d" upstream="kirkstone"   name="meta-qt5"                path="sources/meta-qt5"/>
   <project name="meta-qt5" path="sources/meta-qt5" remote="QT5" revision="d86e2e82c15d186141713515dfd1373013aaebd5" upstream="mickledore"/>
   <project name="meta-timesys" path="sources/meta-timesys" remote="timesys" revision="33a45eb06bead2509f1bf5bf46a5bbc85d66583b" upstream="langdale"/>
   <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="2bb4071ad372d4b5a092c872c0d42b261f757681" upstream="mickledore"/>
